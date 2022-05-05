@@ -1,6 +1,11 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+/*
+Se tiene una matriz de enteros de tamanio 7*30 de secuencias de numeros pares entre 1 y 9 (por cada fila), separadas por 0.
+La matriz esta precargada (no implementar el metodo de carga), y ademas cada fila empieza y termina con uno o mas separadores 0. Se pide realizar un programa que:
+elimine todas las secuencias que cumplan con alguna de las siguientes condiciones: _esta ordenada de forma descendente y contiene el valor 6, _tiene al menos 10 valores multiplos de 3, _no es capicua.
+*/
 public class Parcial2021 {
     final static int MAX_FIL = 7;
     final static int MAX_COL = 30;

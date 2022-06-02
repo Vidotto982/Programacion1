@@ -33,7 +33,6 @@ public class ArrEze {
         for (int i = 0; i < arr.length ; i++) {
             if (arr[i] > 0 && !posIni) {
                 posInicial = i;
-                System.out.println("inicio" + " " + i);
                 posIni = true;
             } else if (arr[i] - arr[i-1] == 1 && posIni) {
                 if (i - posInicial + 1 >= 2) {
@@ -42,22 +41,19 @@ public class ArrEze {
                     cantSec++;
                     if (cantSec == 1) {
                         posInicialPrimerSecuencia = posInicial;
-                        System.out.println("Inicio primer secuencia" + " " + posInicialPrimerSecuencia);
                         posFinalPrimerSecuencia = posFinal;
-                        System.out.println("fin primer secuencia" + " " + posFinalPrimerSecuencia);
+
                     }
 
                     if (posFinal > ultimaPosFinal) {
                         ultimaPosInicial = posInicial;
                         ultimaPosFinal = posFinal;
-                        System.out.println("fin ultima secuencia" + " " + ultimaPosFinal);
                     }
 
                 }
             }
         }
         DesplazarSec(arr, ultimaPosInicial, ultimaPosFinal, posInicialPrimerSecuencia, posFinalPrimerSecuencia);
-        System.out.println("Cantiddad de secuencias" + " " + cantSec);
     }
 
     private static void DesplazarSec(int[] arr, int ultimaPosInicial, int ultimaPosFinal, int posInicialPrimerSecuencia, int posFinalPrimerSecuencia) {

@@ -12,6 +12,7 @@ public class ArrEze {
 
         try {
             mostrarArr(arr);
+
             buscarSecuencias(arr);
 
 
@@ -70,7 +71,6 @@ public class ArrEze {
 
         }
         System.out.println(Arrays.toString(arr));
-        ;
     }
 
 
